@@ -75,6 +75,7 @@ def criar_app():
 
     with app.app_context():
         inicializar()
+        db.engine.dispose()
     return app
 
 
